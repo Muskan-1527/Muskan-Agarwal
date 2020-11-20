@@ -44,7 +44,7 @@ body {
     text-align: center;
 }
 
-/*Nmae and Social Icons*/
+/*Name and Social Icons*/
 
 #name-social-container{
     margin-top: 20vh;
@@ -159,6 +159,98 @@ section:nth-child(2n+1){
     color: white;
     font-size: 1rem;
     margin-left: 10px;
+}
+
+/*Timeline*/
+
+.timeline{
+    position: relative;
+    width:75%;
+    margin-bottom: 2em;
+}
+
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 38.5%;
+    right: -12.5%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: gray;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 38.5%;
+    left: -9.3%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: gray;
+    z-index: 1;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed lightgray;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    z-index: 2;
+    color: #2857a4;
+}
+
+/* Portfolio Section*/
+
+#portfolio-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 2%;
+    justify-content: space-around;
+}
+
+.project{
+    width: 15rem;
+    height: 12rem;
+    background-color: lightgray;
+    margin: 1.5rem;
+    border: 2px solid black;
+}
+
+/*Contact Section*/
+
+#contact{
+    background-image: linear-gradient(45deg, #244792 , #2857a4 ,  #294186 , #33366f , #353165 , #3a2d5c , #3b2d5c);
+}
+
+.contact-heading span{
+    color: white;
 }
 
 /*Common Margin Classes */
