@@ -58,6 +58,10 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.social-icons{
+    margin-top: -6em;
+}
+
 .social-icons li a i{
     padding: 10px;
     font-size: 1rem;
@@ -141,6 +145,8 @@ section:nth-child(2n+1){
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: -2.5em;
+    
 }
 
 .skill-progress{
@@ -236,12 +242,47 @@ section:nth-child(2n+1){
 }
 
 .project{
-    width: 15rem;
-    height: 12rem;
+    width: 19rem;
+    height: 15rem;
     background-color: lightgray;
     margin: 1.5rem;
-    border: 2px solid black;
+    position: relative;
+    /* border: 2px solid black; */
 }
+
+.project_link img{
+    height: 15rem;
+    width: 19rem;
+}
+
+.project_link img:hover{
+    opacity: 0.5;
+}
+
+.project_description{
+    height: 0;
+    position: absolute;
+    top: -1.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: opacity 0.5s, visibility 0.5s, height 0.5s;
+}
+
+.project:hover .project_description {
+    height: 15rem;
+    visibility: visible;
+    opacity: 1;
+    background: rgb(255,182,193 , 0.5);
+  }
+
 
 /*Contact Section*/
 
@@ -275,4 +316,52 @@ section:nth-child(2n+1){
 .eighty-five-percent{
     width: 85%;
     height:inherit;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1100px){
+    #my-image{
+        margin-top: -12vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #my-image{
+        margin-top: -15vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .timeline-divider{
+        left: 5%;
+    }
+
+    .timeline-box{
+        left: 12% !important;
+        width: 80%;
+    }
+
+    .timeline-box::after{
+        left: -12% !important;
+    }
+
+    html{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #my-image{
+        margin-top: -13vh;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #my-image{
+        margin-top: -11vh;
+    }
+    html{
+        font-size: 11px;
+    }
 }
