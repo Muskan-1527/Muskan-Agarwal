@@ -150,8 +150,8 @@ section:nth-child(2n+1){
 }
 
 .skill-progress{
-    width: 8rem;
-    height: 1.4rem;
+    width: 10rem;
+    height: 2rem;
     background-color: lightgray;
     border-radius: 0.8rem;
     margin: 1.5rem;
@@ -161,10 +161,17 @@ section:nth-child(2n+1){
     border-radius: 20px 0px 0px 20px;
 }
 
-.skill-name span{
+/* .skill-name span{
     color: white;
     font-size: 1rem;
-    margin-left: 10px;
+    margin-left: 1rem;
+} */
+
+.skill-name{
+    color: white;
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding-top: 0.3rem;
 }
 
 /*Timeline*/
@@ -181,7 +188,7 @@ section:nth-child(2n+1){
     width: 40%;
     left: 5%;
     min-height: 150px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .timeline-box:nth-child(2n){
@@ -227,6 +234,36 @@ section:nth-child(2n+1){
     transform: rotate(90deg);
     z-index: 2;
     color: #2857a4;
+}
+
+.timeline-box:nth-child(2n + 1) .timeline-text{
+    text-align: end;
+ }
+
+/*Education Section*/
+
+.grade{
+    color: #2857a4;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.institution{
+    margin-top: 0.1rem;
+    color: orange;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.year{
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.about_grade{
+    margin-top: 0.7rem;
+    color: gray;
+    font-size: 1rem;
 }
 
 /* Portfolio Section*/
@@ -311,6 +348,23 @@ section:nth-child(2n+1){
     background-color: #2857a4;
 }
 
+.mb-orange{
+    background-color: orange;
+}
+
+.mb-purple{
+    background-color: purple;
+}
+
+.mb-green{
+    background-color: green;
+}
+
+
+
+.mb-blue{
+    background-color: #2857a4;
+}
 /*Percentage Classes*/
 
 .eighty-five-percent{
